@@ -37,11 +37,11 @@
 
 .units h2 {
     text-align: left;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 3rem;
     text-decoration: underline;
     color: white;
-    font-size: 12px;
+    font-size: 16px;
     text-transform: uppercase;
     padding: 1.3rem;
 }
@@ -81,7 +81,7 @@ section#units {
     color: white;
     border-radius: 88px;
     font-size: 12px;
-    padding: 4px 16px;
+    padding: 4px 26px;
 }
 
 .units-item img {
@@ -121,11 +121,12 @@ section#about h2 {
 
 #units h3 {
     font-size: 54px;
+    font-weight: 500;
+    line-height: normal;
 }
 
-#units .units-card:last-child h3 {
-    font-size: 24px;
-}
+
+
 .units-grid {
     position: relative;
 }
@@ -153,13 +154,21 @@ section#about h2 {
         gap: 20px;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
 
     .units-top {
         display: flex;
-        gap: 100px;
+        gap: 60px;
         flex-direction: column;
         padding: 1.3rem;
+        height: 100%;
+    }
+    #units .units-card:last-child h3 {
+        
+font-size: 40px;
+        
+font-size: clamp(26px, calc(-20px + 6vw), 54px);
     }
 }
 
@@ -169,9 +178,14 @@ section#about h2 {
         flex-direction: column;
         gap: 5px;
     }
-
+    #units .units-card:last-child h3 {
+        
+        font-size: 40px;
+        font-size: clamp(40px, calc(-20px + 5vw), 114px);
+    }
     .units-card {
         display: flex;
+        max-height: 90vh;
     }
 
     .units-top {
@@ -193,6 +207,14 @@ section#about h2 {
 
     .units-item span {
         font-size: 18px;
+        padding: 0 30px;
+    }
+    .units-item span.number {
+        font-size: 18px;
+        padding: 0 30px;
+        width: 140px;
+        display: flex;
+        justify-content: center;
     }
 
     .units-bottom img {
@@ -216,7 +238,12 @@ section#about h2 {
     }
 
     .units-item img {
-        filter: invert(1);
+        filter: invert(1) !important;;
         width: 14px;
+    }
+    .collection {
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
     }
 }

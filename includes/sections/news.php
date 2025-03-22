@@ -35,11 +35,9 @@
                         </div>
                         <div class="news-top">
                             <div class="stats">
-                                <div class="sub-description">
-                                    <p><?php echo $item['sub-description']; ?></p>
-                                </div>
+                               
                                 <a href="<?php echo $item['link']; ?>">
-                                    <div class="news-item">
+                                    <div class="news-item st-button">
                                         <span class="label"><img src="assets/img/arrow.svg" alt=""></span>
                                         <span class="number"><?php echo $item['linkText']; ?></span>
                                     </div>

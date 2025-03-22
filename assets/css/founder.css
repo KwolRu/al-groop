@@ -44,8 +44,7 @@
     flex-direction: column;
 }
 
-.fndr-item span.description,
-.fndr-item-mini span.description span {
+.fndr-item span.description, .fndr-item-mini span.description {
     font-size: 14px;
     border-bottom: 1px solid #17171726;
     padding: 20px 0px;
@@ -53,12 +52,14 @@
 
 .fndr-item span.value {
     font-size: 114px;
-    font-family: "Helvetica";
+    font-family: "Montserrat";
+    font-weight: 500;
 }
 
 .fndr-item-mini span.value {
-    font-size: 84px;
-    font-family: "Helvetica";
+    font-size: 72px;
+    font-family: "Montserrat";
+    font-weight: 500;
 }
 
 section#founder {
@@ -114,7 +115,11 @@ section#founder {
     .founder-info {
     width: 50%;
 }
-
+.fndr-item-mini span.value {
+    font-size: 114px;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
 #founder .fndr-grid {
     width: 50%;
     margin-top: 170px;

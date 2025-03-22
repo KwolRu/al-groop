@@ -9,7 +9,7 @@
             </div>
             <div class="stats">
                 <a href="javascript:void(0)" onclick="toggleText()">
-                    <div class="stat-item">
+                    <div class="stat-item st-button">
                         <span class="number" id="readMoreBtn">подробнее</span>
                         <span class="label"><img src="assets/img/arrow.svg" alt=""></span>
                     </div>
@@ -24,31 +24,30 @@
 
         <div class="we-grid">
             <div class="we-item">
-                <span class="description">
-                    <span>Реализовано </span>
-                    <span>собственных объектов</span>
-                </span>
+                <p class="description">
+                    <span>Реализовано </span>                    <span>собственных объектов</span>
+                </p>
                 <span class="value">900+</span>
             </div>
             <div class="we-item">
-                <span class="description">
+                <p class="description">
                     <span>Человек </span>
                     <span>в команде</span>
-                </span>
+                </p>
                 <span class="value">120</span>
             </div>
             <div class="we-item">
-                <span class="description">
+                <p class="description">
                     <span>Прибыльных </span>
                     <span>проектов</span>
-                </span>
+                </p>
                 <span class="value">96%</span>
             </div>
             <div class="we-item">
-                <span class="description">
+                <p class="description">
                     <span>Бизнес-юнитов</span>
 
-                </span>
+                </p>
                 <span class="value">10</span>
             </div>
         </div>

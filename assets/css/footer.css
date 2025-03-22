@@ -12,13 +12,12 @@
     font-size: 20px;
     margin-bottom: 50px;
     padding: 10px 0px;
-    border-bottom: 1px solid #17171726;
+    /* border-bottom: 1px solid #17171726; */
 }
-.footer-phone, .footer-email, .footer-location, .footer-copyright, .developer {
+.footer-phone, .footer-email, .footer-location, .footer-copyright, .developer, .footer-privacy a {
     color: #B6B6B6; 
     font-size: 14px;
     margin: 5px 0;
-    /* font-family: 'Manrope'; */
 }
 .footer-logo {
     margin-top: 20px;
@@ -36,8 +35,18 @@
     font-size: 24px;
     margin: 0 10px;
     text-decoration: none;
+    display: flex;
+    align-content: center;
+    align-items: center;
 }
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+    
+.rever-row {
+    display: flex;
+    gap: 80px;
+    flex-direction: column;
+}
+}
 @media (min-width: 1024px) {
     footer.custom-footer {
         display: flex;
@@ -59,6 +68,9 @@
         width: 50%;
         position: relative;
         top: 0px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
     }
     
     .footer-contacts {

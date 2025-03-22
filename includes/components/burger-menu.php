@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const burger = document.querySelector('.burger-button');
     const menu = document.querySelector('.menu-overlay');
     const menuItems = document.querySelectorAll('.menu-overlay li');
+    // Add the button link from header
+    const headerButton = document.querySelector('.header .button__link');
     
     // Add index for staggered animation
     menuItems.forEach((item, index) => {
@@ -57,6 +59,17 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.overflow = '';
         });
     });
+    
+    // Make header button open the burger menu
+    if (headerButton) {
+        headerButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            burger.classList.add('active');
+            menu.classList.add('active');
+            burger.setAttribute('aria-expanded', true);
+            document.body.style.overflow = 'hidden';
+        });
+    }
     
     // Close on ESC key
     document.addEventListener('keydown', function(e) {

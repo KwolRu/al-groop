@@ -1,8 +1,0 @@
-/* Add scroll margin for better anchor navigation */
-section[id] {
-  scroll-margin-top: 40px;
-}
-
-html {
-  scroll-behavior: smooth;
-}

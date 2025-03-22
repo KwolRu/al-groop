@@ -6,8 +6,8 @@
 .section-title {
     font-size: 48px;
     /* margin-bottom: 1rem; */
-    /* line-height: normal; */
-    font-weight: 600;
+    line-height: normal;
+    font-weight: 500;
 }
 
 .section-subtitle {
@@ -22,6 +22,8 @@
     /* max-width: 800px; */
     /* line-height: 1.6; */
     text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-wrapper {
@@ -65,12 +67,8 @@
 
 .contact-form input,
 .contact-form textarea {
-    /* padding: 1rem; */
-    /* border: 2px solid #e0e0e0; */
-    /* border-radius: 8px; */
     font-size: 14px;
     transition: all 0.3s;
-    /* transition: border-color 0.3s; */
 }
 
 .contact-form input:focus,
@@ -185,6 +183,7 @@ textarea:-ms-input-placeholder {
     color: #666;
     transition: all 0.3s;
     pointer-events: none;
+    font-family: 'Montserrat';
 }
 
 .form-input:focus~.form-label,
@@ -220,13 +219,21 @@ textarea:-ms-input-placeholder {
     display: flex;
     flex-direction: column;
 }
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+}
 @media (max-width: 1024px) {
    .contacts-desktop{
        display: none;
    }
+   section#contacts {
+    margin-bottom: 80px;
+}
+
 }
 @media (min-width: 1024px) {
-    #contacts .container {
+    #contacts .container, .contacts-desktop .container {
         width: 100%;
         display: flex;
         gap: 20px;
@@ -238,9 +245,10 @@ textarea:-ms-input-placeholder {
         gap: 100px;
     }
     
-    #contacts .section-title {
+    #contacts .section-title, .contacts-desktop .section-title {
         font-size: 88px;
         line-height: normal;
+        text-transform: uppercase;
     }
     
     .right-od {
@@ -253,7 +261,7 @@ textarea:-ms-input-placeholder {
     
     label.form-label {
         font-size: 30px;
-        font-weight: 600;
+        font-weight: 500;
     }
     
     form.contact-form {
@@ -286,7 +294,7 @@ textarea:-ms-input-placeholder {
         flex-direction: column;
         gap: 80px;
     }
-    section#contacts {
+    section#contacts, section#contacts-desktop {
         margin: 300px 0px;
     }
 }

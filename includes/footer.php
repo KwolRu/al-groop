@@ -35,7 +35,9 @@
 
         <div class="footer-copyright">
             2008—2025 Alliance Invest
-            Политика конфиденциальности
+        </div>
+        <div class="footer-privacy">
+            <a href="privacy-policy.html">Политика конфиденциальности</a>
         </div>
         <a href="https://kwol.ru">
             <div class="developer">Создано при поддержке KWOL</div>

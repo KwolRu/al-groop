@@ -4,10 +4,6 @@
         font-size: 16px;
     }
 
-    .container.mx-auto {
-        /* width: 50%; */
-    }
-
     .stat-item span {
         padding: 4px 16px;
         font-size: 12px;
@@ -19,23 +15,26 @@
 
     .we-item span.value {
         font-size: 114px;
-        font-family: "Manrope";
+        font-family: "Montserrat";
+        font-weight: 500;
     }
+
     .we-item {
-        display: flex ;
+        display: flex;
         flex-direction: column-reverse;
     }
-    .we-item span.description {
+
+    .we-item p.description {
         text-align: right;
-        display: flex
-;
+        display: flex;
         justify-content: flex-end;
         flex-direction: column;
-    
+
     }
+
     p.about-title {
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 14px;
         text-decoration: underline;
     }
 }
@@ -43,23 +42,31 @@
 @media (max-width: 1024px) {
     .we-item span.value {
         font-size: 114px;
-        font-family: "Helvetica";
+        font-family: "Montserrat";
+        font-weight: 500;
     }
+
     .we-item {
         display: flex;
         flex-direction: column;
     }
+
     p.about-title {
         text-transform: uppercase;
+        text-decoration: underline;
         font-size: 16px;
+    }
+    .we-item p.description {
+        font-size: 14px;
+        border-bottom: 1px solid #17171726;
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
     }
 
 }
-.we-item span.description{
-    display: flex;
-    flex-direction: row;
 
-    }
 
 
 img.about-img {
@@ -77,15 +84,6 @@ img.about-img {
     gap: 6px;
     display: flex;
 }
-
-
-
-.we-item span.description {
-    font-size: 14px;
-    border-bottom: 1px solid #17171726;
-    padding: 20px 0px;
-}
-
 
 .hidden-text {
     opacity: 0;

@@ -8,7 +8,7 @@
                     <h3>Александр Казаченко <span>Основатель Alliance Group</span></h3>
                     <div class="stats">
                         <a href="javascript:void(0)" onclick="toggleText()">
-                            <div class="stat-item">
+                            <div class="stat-item st-button">
                                 <span class="label"><img src="assets/img/arrow.svg" alt=""></span>
                                 <span class="number" id="readMoreBtn">подробнее</span>
                             </div>
@@ -23,7 +23,7 @@
             <div class="container fndr-grid">
                 <div class="fndr-item">
                     <span class="description">Реализовано инвест-объектов</span>
-                    <span class="value">900</span>
+                    <span class="value">900+</span>
                 </div>
                 <div class="fndr-item-mini">
                     <span class="description">Оборот</span>
